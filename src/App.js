@@ -1,12 +1,9 @@
-import './App.css';
+import React from 'react';
+import NavBar from './NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <div></div>
-      </header>
-    </div>
+    <React.Fragment><NavBar /></React.Fragment>
   );
 }
 
