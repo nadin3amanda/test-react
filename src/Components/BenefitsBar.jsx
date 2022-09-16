@@ -6,15 +6,15 @@ const BenefitsBar = () => {
     <BenefitsContainer>
         <ul>
             <li>
-            <a href="/"><img src='../Icons/Vector1.png' className='icon' alt='1' />&nbsp; Exclusive Deals for VIP 2 and up!</a></li>
+            <a href="/"><img src={require('../Images/Icons/Vector1.png')} className='icon' alt='Vector1' />&nbsp; Exclusive Deals for VIP 2 and up!</a></li>
             <li>
-            <a href="/"><img src='../Icons/Vector1.png' className='icon' alt='1' />&nbsp; Weekly New Arrivals</a></li>
+            <a href="/"><img src={require('../Images/Icons/Vector2.png')} className='icon' alt='Vector2' />&nbsp; Weekly New Arrivals</a></li>
             <li>
-            <a href="/"><img src='../Icons/Vector1.png' className='icon' alt='1' />&nbsp; Free Shipping On Orders Over $100</a></li>
+            <a href="/"><img src={require('../Images/Icons/Vector3.png')} className='icon' alt='Vector3' />&nbsp; Free Shipping On Orders Over $100</a></li>
             <li>
-            <a href="/">Track Your Order</a></li>
+            <a href="/"><img src={require('../Images/Icons/Vector4.png')} className='icon' alt='Vector4' />&nbsp; Track Your Order</a></li>
             <li>
-            <a href="/">10% Off On Your First Order!</a></li>
+            <a href="/"><img src={require('../Images/Icons/Vector5.png')} className='icon' alt='Vector5' />&nbsp; 10% Off On Your First Order!</a></li>
         </ul>
     </BenefitsContainer>
     );
@@ -50,9 +50,11 @@ const BenefitsContainer = styled.div`
     }
 
     li {
-        padding: 10px 80px 10px 39px;
-        width: 252px;
+        padding: 10px 50px 10px 39px;
+        width: 280px;
         height: 45px;
+        vertical-align: middle;
+        justify-content: space-between;
     }
 
     a {
@@ -62,8 +64,10 @@ const BenefitsContainer = styled.div`
     }
 
     .icon {
-        width: 22.5px;
-        height: 22.5px;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        margin-top: -5px;
     }
 
 `;
