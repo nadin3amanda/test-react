@@ -20,6 +20,7 @@ const NavBar = () => {
         </ul>
         </LeftNav>
         <h1><a href="/" className="Title"> THREADED </a></h1>
+        <RightNav>
         <ul>
             <li>
                 <a href="/"><i className="fa-light fa-user" /></a>
@@ -34,6 +35,14 @@ const NavBar = () => {
                 <a href="/"><i className="fa-regular fa-headset" /></a>
             </li>
         </ul>
+        <CurrencyIcon>
+            <Flag>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/United-states_flag_icon_round.svg/2048px-United-states_flag_icon_round.svg.png" width="25" height="25" alt="us-flag" />
+                <p>USD $</p>
+                <img src={require("../src/Images/Icons/chevron-down.png")}  className="chevron-down" alt="chevron-down" />
+            </Flag>
+        </CurrencyIcon>
+        </RightNav>
     </Nav>
     );
 };
@@ -88,7 +97,38 @@ const LeftNav = styled.div`
         color: #000;
         display: flex;
         gap: 1rem;
-        padding-right: 30px;        
+        padding-right: 30px;
     }
 
+`;
+
+const RightNav = styled.div`
+    width: 310px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+`;
+
+const CurrencyIcon = styled.div`
+    width: 115px;
+    height: 35px;
+    border-radius: 35px;
+    border: 1px solid #E5E5E5;
+    margin: 20px 0px 0px 550px;
+`;
+
+const Flag = styled.div`
+    margin: 5px 0px 0px 5px;
+    width: 115px;
+    p {
+        text-align: center;
+        margin: -25px 0px 0px 10px;
+    }
+    .chevron-down {
+        width: 7px;
+        height: 5px;
+        float: right;
+        margin-right: 15px;
+        margin-top: -10px !important;
+    }
 `;
