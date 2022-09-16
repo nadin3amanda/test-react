@@ -1,9 +1,13 @@
 import React from 'react';
+import BenefitsBar from './Components/BenefitsBar';
 import NavBar from './NavBar';
 
 function App() {
   return (
-    <React.Fragment><NavBar /></React.Fragment>
+    <React.Fragment>
+      <NavBar />
+      <BenefitsBar />
+      </React.Fragment>
   );
 }
 
