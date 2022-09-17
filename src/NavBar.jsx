@@ -23,18 +23,21 @@ const NavBar = () => {
         <RightNav>
         <ul>
             <li>
-                <a href="/"><i className="fa-light fa-user" /></a>
+                <a href="/"><img src={require('../src/Images/Icons/bx_bx-user.png')} alt="user" /></a>
             </li>
             <li>
-                <a href="/"><i className="fa-light fa-bag-shopping" /></a>
+                <a href="/"><img src={require('../src/Images/Icons/bx_bx-shopping-bag.png')} alt="bag" /></a>
             </li>
             <li>
-                <a href="/"><i className="fa-light fa-heart" /></a>
+                <a href="/"><img src={require('../src/Images/Icons/bx_bx-heart.png')} alt="heart" /></a>
             </li>
             <li>
-                <a href="/"><i className="fa-regular fa-headset" /></a>
+                <a href="/"><img src={require('../src/Images/Icons/bx_bx-support.png')} alt="support" /></a>
             </li>
-        </ul>
+            <li>
+                <a href="/"><img src={require('../src/Images/Icons/bx_bx-search.png')} alt="search" /></a>
+            </li>
+        
         <CurrencyIcon>
             <Flag>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/United-states_flag_icon_round.svg/2048px-United-states_flag_icon_round.svg.png" width="25" height="25" alt="us-flag" />
@@ -42,6 +45,7 @@ const NavBar = () => {
                 <img src={require("../src/Images/Icons/chevron-down.png")}  className="chevron-down" alt="chevron-down" />
             </Flag>
         </CurrencyIcon>
+        </ul>
         </RightNav>
     </Nav>
     );
@@ -107,6 +111,11 @@ const RightNav = styled.div`
     height: 35px;
     display: flex;
     flex-direction: row;
+    margin: 30px -10px 0px 50px;
+
+    ul {
+        margin-left: 350px;
+    }
 `;
 
 const CurrencyIcon = styled.div`
@@ -114,7 +123,7 @@ const CurrencyIcon = styled.div`
     height: 35px;
     border-radius: 35px;
     border: 1px solid #E5E5E5;
-    margin: 20px 0px 0px 550px;
+    margin: -10px 0px 0px 30px;
 `;
 
 const Flag = styled.div`
