@@ -5,6 +5,7 @@ import NewArrivals from './Components/NewArrivals';
 import NowTrending from './Components/NowTrending';
 import RecentlyBought from './Components/RecentlyBought';
 import SiteWideDeals from './Components/SiteWideDeals';
+import YourNextInspo from './Components/YourNextInspo';
 import NavBar from './NavBar';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <NowTrending />
       <NewArrivals />
       <RecentlyBought />
+      <YourNextInspo />
       </React.Fragment>
   );
 }
