@@ -3,6 +3,7 @@ import Banner from './Components/Banner';
 import BenefitsBar from './Components/BenefitsBar';
 import NewArrivals from './Components/NewArrivals';
 import NowTrending from './Components/NowTrending';
+import RecentlyBought from './Components/RecentlyBought';
 import SiteWideDeals from './Components/SiteWideDeals';
 import NavBar from './NavBar';
 
@@ -15,6 +16,7 @@ function App() {
       <SiteWideDeals />
       <NowTrending />
       <NewArrivals />
+      <RecentlyBought />
       </React.Fragment>
   );
 }
