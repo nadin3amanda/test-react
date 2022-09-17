@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 const NewArrivals = () => {
     return (
-        <NewArrivalsBanner>
+        <NewArrivalsBanner style={{backgroundImage: 'url(' + require('../Images/bg-New-Arrivals-2.png') + ')'}} >
             <img src={require('../Images/model-1.png')} className="model-1" alt="model-1" ></img>
             <img src={require('../Images/model-2.png')} className="model-2"alt="model-2"></img>
+            
             <TextContainer>
             <h2>NEW ARRIVALS</h2>
             <p>Get ready for the holidays with us!</p>
@@ -21,9 +22,7 @@ const NewArrivalsBanner = styled.div`
         display: flex;
         height: 400px;
         margin-bottom: 10px;
-        background-image: url('../Images/bg-New-Arrivals-2.png');
-        background-size: contain;
-        background-repeat: no-repeat;
+
         .model-1 {
             width: 377px;
             height: 400px;
@@ -37,6 +36,11 @@ const NewArrivalsBanner = styled.div`
             z-index:2;
             position: absolute;
             margin-left: 200px;
+        }
+
+        .new-arrivals-banner {
+            width: 100vw;
+            z-index: -1000;
         }
 `;
 const TextContainer = styled.div`

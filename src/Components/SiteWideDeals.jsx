@@ -54,16 +54,16 @@ const DiscountContainer = styled.div`
         padding: 45px 0px 45px 0px;
         width: 160px;
         height: 60px;
-        margin-left: 68px;
+        margin-left: 50px;
     }
 `;
 
 const PromoContainer = styled.div`
         width: 100vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-auto-rows: 200px;
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 100px;
+        gap: 10px;
         text-transform: uppercase;
         font-family: 'Montserrat';
 
@@ -126,7 +126,7 @@ const BlackFridayBanner = styled.div`
             font-size: 18px;
             color: #fff;
             text-transform: uppercase;
-            margin: -60px 0px 0px 100px;
+            margin: -60px 0px 0px 125px;
 
         }
 `;
@@ -136,8 +136,7 @@ const Banner = styled.div`
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-rows: 200px;
         gap: 20px;
-        z-index: 1000;
-        margin: -80px 0px 0px 118px;
+        margin: -80px 0px 0px 80px;
         text-transform: uppercase;
         color: #fff;
         h2 {
@@ -166,7 +165,7 @@ const ShopButton = styled.button`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     flex-direction: row;
     position: absolute;
-    margin: 20px 0px 0px -450px;
+    margin: 20px 0px 0px -850px;
 
     :hover {
         background-color: #000;

@@ -5,14 +5,14 @@ import styled from "styled-components";
 const Banner = () => {
     return (
         <React.Fragment>
-        <MainContainer>
-            <SparkleContainer>
-                <img src={require("../Images/Rectangle17.png")}  className="Banner2" alt="banner2" width="842" height="650" />
-                <BlackFridayContainer>
-            <img src={require("../Images/Rectangle18.png")} alt="Black-Friday" width="644" height="446" />
-            <StyledButton>shop now</StyledButton>
-        </BlackFridayContainer>
+        <MainContainer  style={{backgroundImage: 'url(' + require('../Images/Rectangle17.png'), backgroundRepeat:'no-repeat', backgroundSize:'contain'}}>
+            <SparkleContainer >
+                <div></div>
             </SparkleContainer>
+            <BlackFridayContainer style={{backgroundImage: 'url(' + require('../Images/Rectangle.png'), opacity:1.5, backgroundSize:'stretch', width:'1000px'}}>
+                    <img src={require("../Images/Rectangle18.png")} alt="Black-Friday" width="644" height="446" className="Black_friday-header"/>
+                    <StyledButton>shop now</StyledButton>
+                </BlackFridayContainer >
 
         </MainContainer>
         </React.Fragment>
@@ -30,14 +30,13 @@ const MainContainer = styled.div`
 `;
 
 const BlackFridayContainer = styled.div`
-        z-index: 1000;
         display: flex;
         height: 650px;
-        width: 650px;
+        width: 1000px;
         vertical-align: middle;
-        margin: -660px 80px 0px 510px;
+        margin: 0px 80px 0px 1100px;
         float: right;
-        background-image: url('/Images/Rectangle17.png');
+        z-index: 1000;
 `;
 
 const StyledButton = styled.button`
@@ -69,5 +68,5 @@ const StyledButton = styled.button`
 `;
 
 const SparkleContainer = styled.div`
-       
+   
 `;
