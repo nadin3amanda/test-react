@@ -7,6 +7,7 @@ import RecentlyBought from './Components/RecentlyBought';
 import SiteWideDeals from './Components/SiteWideDeals';
 import YourNextInspo from './Components/YourNextInspo';
 import SignUp from './Components/SignUp';
+import Footer from './Components/Footer';
 import NavBar from './NavBar';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <RecentlyBought />
       <YourNextInspo />
       <SignUp />
+      <Footer />
       </React.Fragment>
   );
 }
